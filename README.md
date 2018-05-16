@@ -18,7 +18,7 @@ inside the root directory to make the module available as `torch_testing`.
 
 ## Usage example
 
-You can assert the equality of two `tensor`s like
+You can assert the equality of two `torch.tensor`s like
 
 ```py
 import unittest
