@@ -36,6 +36,11 @@ class TestAssertEqual(unittest.TestCase):
         b = torch.tensor([4.0], dtype=torch.float16)
         tt.assert_equal(a, b)
 
+    def test_with_a_tensor_that_requires_grad(self):
+        a = torch.tensor([1], requires_grad=True)
+        b = torch.tensor([1])
+        tt.assert_equal(a, b)
+
     def test_with_unequal_one_value_tensors(self):
         a = torch.tensor([23.65])
         b = torch.tensor([23.66])
