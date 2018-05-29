@@ -45,6 +45,11 @@ Currently this assertion method is provided by converting the tensors to `numpy`
 ### `assert_allclose(actual, expected, rtol=1e-07, atol=0, equal_nan=True, **kwargs)`
 Currently this assertion method is provided by converting the tensors to `numpy` arrays using `tensor.numpy()` and feeding them to [numpy.testing.assert_allclose](https://docs.scipy.org/doc/numpy/reference/generated/numpy.testing.assert_allclose.html#numpy.testing.assert_allclose).
 
+### `assert_within(tensor, min_val, max_val, rtol=0)`
+Ensures that all values of the given `tensor` are greater than or equal to `min_val` and less than or equal to `max_val`. Allows to specify a relative tolerance `rtol`, which behaves as in [numpy.testing.assert_allclose](https://docs.scipy.org/doc/numpy/reference/generated/numpy.testing.assert_allclose.html#numpy.testing.assert_allclose).
+
+*NOTE: Uses `assert_allclose` under the hood, hence the fail message might currently be a little confusing.*
+
 ## Development
 
 *Unless noted otherwise, all commands are expected to be executed from the root directory of this repository.*
