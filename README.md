@@ -8,13 +8,11 @@ Last tested with **Python 3.6.4 :: Anaconda, Inc.** and **PyTorch 0.4**.
 
 ## Installation
 
-Clone this repository and run
+You can install this package using `pip`:
 
 ```py
-pip install .
+pip install torch_testing
 ```
-
-inside the root directory to make the module available as `torch_testing`.
 
 ## Usage example
 
