@@ -4,7 +4,7 @@ A collection of assertion methods to compare PyTorch Tensors in tests.
 
 Currently all assertion methods are provided by converting the tensors to numpy arrays and feeding them into an appropriate `numpy.testing` method. That way, on failure, detailed information is provided as to why the test failed.
 
-Last tested with **Python 3.6.4 :: Anaconda, Inc.** and **PyTorch 0.4**.
+Last tested with **Python 3.6.4 :: Anaconda, Inc.** and **torch 1.0.1**.
 
 ## Installation
 

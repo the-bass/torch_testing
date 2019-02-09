@@ -37,7 +37,7 @@ class TestAssertEqual(unittest.TestCase):
         tt.assert_equal(a, b)
 
     def test_with_a_tensor_that_requires_grad(self):
-        a = torch.tensor([1], requires_grad=True)
+        a = torch.tensor([1], dtype=torch.float16, requires_grad=True)
         b = torch.tensor([1])
         tt.assert_equal(a, b)
 
